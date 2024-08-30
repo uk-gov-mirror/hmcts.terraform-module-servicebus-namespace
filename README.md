@@ -27,7 +27,7 @@ service_bus_sku = "Premium"
 service-bus.tf
 ```terraform
 module "servicebus_namespace" {
-  source                  = "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=master"
+  source                  = "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=4.x"
   name                    = "${var.product}-${var.component}"
   resource_group_name     = azurerm_resource_group.shared_resource_group.name
   location                = var.location
@@ -58,7 +58,7 @@ servicebus_enable_private_endpoint = true
 service-bus.tf
 ```terraform
 module "servicebus_namespace" {
-  source                  = "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=master"
+  source                  = "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=4.x"
   ...
   enable_private_endpoint = var.servicebus_enable_private_endpoint
 }
