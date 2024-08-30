@@ -38,12 +38,6 @@ variable "capacity" {
   description = "Specifies the capacity. Defaults to 1 when using Premium SKU."
 }
 
-variable "zone_redundant" {
-  type        = bool
-  default     = false
-  description = "Whether or not this resource is zone redundant (true or false)"
-}
-
 variable "enable_public_access" {
   type        = bool
   default     = false
