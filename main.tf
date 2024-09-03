@@ -10,7 +10,6 @@ resource "azurerm_servicebus_namespace" "servicebus_namespace" {
   location                     = var.location
   resource_group_name          = var.resource_group_name
   sku                          = local.sku
-  zone_redundant               = var.zone_redundant
   tags                         = var.common_tags
   capacity                     = local.capacity
   premium_messaging_partitions = local.premium_messaging_partitions
